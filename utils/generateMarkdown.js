@@ -1,8 +1,3 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-
-// const { text } = require("stream/consumers");
-
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
   var badges = {
     'GNU GPLv3': "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]",
@@ -24,9 +19,6 @@ function renderLicenseBadge(license) {
   return badges[license];
 };
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-
 function renderLicenseLink(license) {
   var links = {
     'GNU GPLv3': "(https://www.gnu.org/licenses/gpl-3.0)",
@@ -46,10 +38,8 @@ function renderLicenseLink(license) {
     'None': ''
   }
   return links[license];
-}
+};
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 function renderLicenseSection(licenses) {
 
   var markdown = ''
@@ -58,10 +48,9 @@ function renderLicenseSection(licenses) {
     markdown += `${renderLicenseBadge(licenses[i])}${renderLicenseLink(licenses[i])}`
   }
   return markdown;
-}
-// TODO: Create a function to generate markdown for README
+};
+
 function generateMarkdown(data) {
-  console.log(data)
   return `
 # ${data.title} ${renderLicenseSection(data.license)}
 
@@ -106,13 +95,13 @@ ${data.tests}
 
 ## Questions
 
-${data.question}
+${data.questions}
 
 ## Link
 
 ${data.link}
 
 `;
-}
+};
 
 module.exports = generateMarkdown;

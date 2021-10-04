@@ -1,9 +1,9 @@
 
-# README-Generator 
+# PROJECT TITLE!!! [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
 ## Description
 
-This application generates a professional README.md file. Often times the README.md file is overlooked. With the help of this application you won't have to worry about that again! The user promps will help guide you to enter key information about your project and organize it properly.
+a
 
 ## Table of contents
 
@@ -18,33 +18,33 @@ This application generates a professional README.md file. Often times the README
 
 ## Installation
 
-install the inquirer package by typing `npm i` in your terminal. Then type in `node index` and follow the prompts.
+b
 
 ## Usage
 
-
+c
 
 ## License
 
-None
+GNU AGPLv3
 
 ## Credits
 
-
+d
 
 ## Contributing
 
-
+e
 
 ## Tests
 
-
+f
 
 ## Questions
 
-undefined
+https://github.com/JakeFay
 
 ## Link
 
-
+g
 
