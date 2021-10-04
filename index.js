@@ -5,7 +5,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const path = require('path');
 // TODO: Create an array of questions for user input
 
-// Questions
+//and Questions
 
 
 const questions = [
@@ -46,7 +46,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'what does the user need to know?'
+        message: 'Provide instructions and examples for use. Include screenshots as needed.'
     },
     {
         type: 'checkbox',
@@ -70,7 +70,14 @@ const questions = [
         message: 'write tests for your application, then provide examples on how to run them.'
     },
     {
-
+        type: 'input',
+        name: 'questions',
+        message: 'type in your github account with instructions on how people can reach you with questions.'
+    },
+    {
+        type: 'input',
+        name: 'link',
+        message: 'type in a link for your deployed application'
     }
 
 
@@ -85,8 +92,8 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((data) => {
-        //console.log(data)
-        writeToFile("README.md", generateMarkdown({...data}))
+        console.log(data)
+        writeToFile("./output/README.md", generateMarkdown({...data}))
     })
 };
 
