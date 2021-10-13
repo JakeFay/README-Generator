@@ -25,7 +25,9 @@ Install the `Inquirer` package by typing `npm i` in your terminal.
 
 Type in `node index` in your integrated terminal and follow the prompts. Use the up and down arrows to scroll through the different license options and 'space bar' to slecet them. After your have answered all prompts your README.md will appear in the 'output' folder.
 
-(#./assets/video.mov)
+link to the screen recording below
+
+https://youtu.be/5rdztJ0saw4
 
 ## License
 
